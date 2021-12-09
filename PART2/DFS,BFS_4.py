@@ -9,6 +9,7 @@ for _ in range(n):
 dx = [-1, 1, 0, 0]
 dy = [0, 0, 1, -1]
 
+
 def bfs(x, y):
     queue = deque()
     queue.append((x, y))
@@ -29,7 +30,7 @@ def bfs(x, y):
                 array[nx][ny] = array[x][y] + 1
                 queue.append((nx, ny))
 
-    return array[n-1][m-1]
+    return array[n - 1][m - 1]
 
-print(bfs(0,0))
 
+print(bfs(0, 0))
