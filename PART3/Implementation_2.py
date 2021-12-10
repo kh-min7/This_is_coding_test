@@ -16,4 +16,5 @@ if number != 0:
 
 for i in alphabet:
     print(i, end='')
+    #print(''.join(alphabet))
     # join 함수 사용법 익히기

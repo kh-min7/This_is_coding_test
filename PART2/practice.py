@@ -1,6 +1,10 @@
 from collections import deque
 
-n, m, v = map(int, input().split())
-graph = []
+n, m, k, x = map(int, input().split())
+
+graph = [[] for _ in range(n + 1)]
+
 for _ in range(m):
-    graph.append(list(map(int, input().split())))
+    a, b = map(int, input().split())
+    graph[a].append(b)
+
