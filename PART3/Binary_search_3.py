@@ -1,14 +1,10 @@
-import sys
-
-ipt = sys.stdin.readline
-
-n, c = map(int, ipt().split())
+n, c = map(int, input().split())
 array = []
 for _ in range(n):
-    array.append(int(ipt()))
+    array.append(int(input()))
 array.sort()
 
-start = array[1] - array[0]
+start = 1
 end = array[-1] - array[0]
 result = 0
 
