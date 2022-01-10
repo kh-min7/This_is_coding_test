@@ -1,5 +1,11 @@
 n = int(input())
+coins = list(map(int, input().split()))
 
-a = list(map(int, input().split()))
+coins.sort()
 
-# 다시 생각해보기
+sum = 1
+for i in coins:
+    if i <= sum:
+        sum += i
+    else:
+        print(sum)
